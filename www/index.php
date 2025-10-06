@@ -3,7 +3,7 @@
 $alumno     = "Francisco.M Toledo Pérez";
 $asignatura = "Desarrollo Web en Entorno Servidor";
 $curso      = "2025/26";
-$github     = "https://github.com/fhuerui697/DWES25-26"; 
+$github     = "https://github.com/ftoledo-26/DWES25-26"; 
 
 // Patrones: carpetas unidadX / actY
 $patronUnidad = '/^unidad(\d+)$/i';
