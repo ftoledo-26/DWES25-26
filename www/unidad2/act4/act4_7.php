@@ -1,4 +1,12 @@
 <?php
+/*
+---
+title: Ejercicio 7: 
+desc:  Ejercicio 7: Números Pares e Impares con Colores
+tags: [PHP, array,array_push,random_int,array_count_values]
+code: https://github.com/usuario/repo/blob/main/unidad1/ej2.php
+---
+*/
 $lista = [];
 for($i = 0; $i < 10; $i++){
     $lista[] = random_int(1,100);

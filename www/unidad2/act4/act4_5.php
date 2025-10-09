@@ -1,4 +1,12 @@
 <?php
+/*
+---
+title: Ejercicio 5: 
+desc: Ejercicio 5: Conteo de Sexo Aleatorio
+tags: [PHP, array,array_push,random_int,array_count_values]
+code: https://github.com/usuario/repo/blob/main/unidad1/ej2.php
+---
+*/
 $productos = array(
     "Pan" => ["precio" => 1, "iva" => 1],
     "Televisor" => ["precio" => 500, "iva" => 4],

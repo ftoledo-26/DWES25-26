@@ -1,4 +1,12 @@
 <?php
+/*
+---
+title: Ejercicio 3: 
+desc: Ejercicio 3: Conteo de Sexo Aleatorio
+tags: [PHP, array,foreach]
+code: https://github.com/usuario/repo/blob/main/unidad1/ej2.php
+---
+*/
 $lista=[];
 echo "<table border='1' >";
 echo "<td>#</td>";

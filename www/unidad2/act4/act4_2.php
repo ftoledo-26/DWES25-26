@@ -2,8 +2,8 @@
 /*
 ---
 title: Ejercicio 2: 
-desc: tabla de multiplicar de un numero
-tags: [PHP, basico]
+desc: Ejercicio 2: Listado de Personas
+tags: [PHP, array,foreach]
 code: https://github.com/usuario/repo/blob/main/unidad1/ej2.php
 ---
 */
