@@ -1,4 +1,12 @@
 <?php
+/*
+---
+title: Ejercicio 4: 
+desc:  Ejercicio 4: Validación de Formulario — Campos Faltantes
+tags: [PHP, basico]
+code: https://github.com/usuario/repo/blob/main/unidad1/ej2.php
+---
+*/
 $campos_obligatorios = ['nombre', 'email', 'edad', 'telefono'];
 $campos_enviados = ['nombre' => 'Ana', 'edad' => 25];
 $campos_faltantes = array_diff($campos_obligatorios, array_keys($campos_enviados));
@@ -28,4 +36,5 @@ foreach ($campos_faltantes as $campo) {
     echo "<tr><td>$campo</td></tr>";
 }
 echo "</table>";
+
 ?>   

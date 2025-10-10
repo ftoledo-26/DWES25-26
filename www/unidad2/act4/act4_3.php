@@ -3,7 +3,7 @@
 ---
 title: Ejercicio 3: 
 desc: Ejercicio 3: Conteo de Sexo Aleatorio
-tags: [PHP, array,foreach]
+tags: [PHP, array,array_push,random_int,array_count_values]
 code: https://github.com/usuario/repo/blob/main/unidad1/ej2.php
 ---
 */

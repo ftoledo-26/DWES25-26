@@ -2,7 +2,7 @@
 /*
 ---
 title: Ejercicio 5: 
-desc: Ejercicio 5: Conteo de Sexo Aleatorio
+desc:  Ejercicio 5: Cálculo de Precios con IVA
 tags: [PHP, array,array_push,random_int,array_count_values]
 code: https://github.com/usuario/repo/blob/main/unidad1/ej2.php
 ---
