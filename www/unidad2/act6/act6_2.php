@@ -45,7 +45,7 @@ for ($i = 0; $i < count($nombre_Sepa); $i++) {
             break;
     }
 }
-echo"<br> Las Iniciales son: ";
+echo"<br>";
 $contador = 0;
 foreach($lista as $letras){
     echo $letras;

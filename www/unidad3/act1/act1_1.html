@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <form method="post" action="procesar.php" enctype="multipart/form-data">
+        <label for="">Nombre y apellidos <input type="text"name="nombre"id="nombre" required></label>
+        <label for="">Email <input type="text" name="Email" id="Email" required></label>
+        <label for="">URL <input type="text" name="url" id="url"></label>
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for=""><input type="radio" name="sexo" value="M">Masculino</label>
+            <label for=""><input type="radio" name="sexo" value="F">Femenino</label>
+            <label for=""><input type="radio" name="sexo" value="O">Contigo</label>
+        </fieldset>
+    </form>
+    </main>
+    
+</body>
+</html>
