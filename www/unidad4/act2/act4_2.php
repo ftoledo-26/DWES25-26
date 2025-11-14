@@ -1,21 +1,20 @@
 <?php
 require_once "config.php";
 require_once("modelo/curso_modelo.php");
-$dsn = DB_DSN;
-$usuario = DB_USER;
-$contraseña = DB_PASS;
+require_once("modelo/estudiante_modelo.php");
+require_once("controlador/instituto_controlador.php");
+require_once("vista/vista_instituto.php");
 
     try {
-        $mbd = new PDO($dsn, $usuario, $contraseña);
+        $mbd = new PDO(DB_DSN, DB_USER, DB_PASS);
         $mbd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo 'Conexión exitosa a la base de datos.';
-
-        $curso1 = new curso_modelo($mbd);
-        $curso1->agregar("paconi");
-        $array = $curso1->todos();
-        print_r($array);
-        $curso1->variar();
-        print_r($array);
+        $est = new estudiante_modelo($mbd);
+        $curso = new curso_modelo($mbd);
+        $cont = new instituto_controlador($est, $curso);
+        
+        $data = $cont->ejecutar();
+        mostrar($data);
     } catch (PDOException $e) {
         echo 'Falló la conexión: ' . $e->getMessage();
     }

@@ -1,9 +1,7 @@
 <?php
 
-use LDAP\Result;
-
 class curso_modelo {
-    public $conn;
+    private $conn;
     public function __construct(PDO $pdo){
         $this->conn = $pdo; 
     }
@@ -30,13 +28,17 @@ class curso_modelo {
         $sql="SELECT * FROM cursos";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
-        $array = $stmt->fetch();
+        $array = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $array;
     }
     public function variar() : void{
         $sql = "DELETE FROM cursos";
         $stmt = $this->conn->prepare($sql);
         $stmt-> execute();
+
+        $sqlReset = "ALTER TABLE cursos AUTO_INCREMENT = 1";
+        $stmtReset = $this->conn->prepare($sqlReset);
+        $stmtReset->execute();
     }
 }
 ?>
